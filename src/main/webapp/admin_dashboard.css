@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f06, #ff9a00, #ffde00, #3ddc84, #147efb, #6434b9);
+    background-size: 1200% 1200%;
+    animation: gradientBackground 15s ease infinite;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin: 15px 0;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: linear-gradient(to bottom right, #fff, #f9f9f9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.delete-button, .update-button {
+    background: linear-gradient(to right, #dc3545, #c82333);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.delete-button:hover, .update-button:hover {
+    background: linear-gradient(to right, #c82333, #a71d2a);
+    transform: scale(1.05);
+}
+
+.logout-button, .new-user-button {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.logout-button:hover, .new-user-button:hover {
+    background: linear-gradient(to right, #0056b3, #004494);
+    transform: scale(1.05);
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    margin: 0 10px;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
